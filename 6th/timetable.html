@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Time table</title>
+		<style>
+			table{
+				width: 95%;
+			}
+			table,th,td{
+				border:1px solid black;
+				text-align:center;
+				border-collapse: collapse;
+			}
+			.yellow-cell{
+				background-color: #fab800;
+			}
+			.green-cell{
+				background-color: green;
+			}
+			.blue-cell{
+				background-color: #dedaff;
+			}
+			.none{
+				background-color: #fff;
+			}
+			.wite{
+				color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr class="blue-cell">
+				<th class="none"></th>
+				<th>09:30am 10:20am</th>
+				<th>10:20am 11:10am</th>
+				<th>11:10am 12:00am</th>
+				<th>12:00pm 12:50pm</th>
+				<th>12:50pm 01:35pm</th>
+				<th>01:35pm 02:20pm</th>
+				<th>02:20pm 03:05pm</th>
+				<th>03:05pm 03:50pm</th>
+				<th>03:50pm 04:35pm</th>
+			</tr>
+			<tr>
+				<th rowspan=6>Monday</th>
+				<td>Vibhooti(LR)</td>
+				<td>Information Security</td>
+				<td>Niraj(SS)</td>
+				<td rowspan=35>lunch</td>
+				<td>Advance java Lab</td>
+				<td>Web technology</td>
+				<td colspan=2>Advance Java lab G1</td>
+				<td>linux</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>429</td>
+				<td></td>
+				<td colspan=2>24</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="yellow-cell">CCPD</td>
+				<td>Mr Gurmandeep</td>
+				<td class="yellow-cell">CCPD</td>
+				<td class="green-cell">Ms pragti</td>
+				<td class="green-cell">Ms gurmandeep kaur</td>
+				<td colspan=2 class="green-cell">Ms pragti</td>
+				<td class="green-cell">Mr Navin</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan=2>Web technology G2</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan=2>220</td>
+				<td></td>
+			</tr>
+			<tr class="green-cell">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan=2>Mr Sourav</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th rowspan=7>Tuesday</th>
+				<td>DDA</td>
+				<td>Advance java</td>
+				<td class="yellow-cell">Anuja (VA)</td>
+				<td>Advance java Lab</td>
+				<td class="yellow-cell">Shanjay DS</td>
+				<td>Information Security</td>
+				<td colspan=2>Web technology lab G2</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>422</td>
+				<td></td>
+				<td></td>
+				<td colspan=2>220</td>
+			</tr>
+			<tr>
+				<td class="green-cell">Ms smriti</td>
+				<td class="green-cell">Dr. Anand sukla</td>
+				<td></td>
+				<td class="green-cell">Ms pragti</td>
+				<td colspan=2></td>
+				<td colspan=2 class="green-cell">Mr Sourav</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan=2>Linux Lab G1</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2">24</td>
+			</tr>
+			<tr class="green-cell">
+				<td></td>
+				<td class="green-cell"></td>		
+				<td class="yellow-cell">CCPD</td>		
+				<td class="green-cell"></td>
+				<td rowspan="2" class="yellow-cell">CCPD</td>
+				<td>Ms Gaganpreet<td>
+				<td colspan="2">Mr Navin</td>
+			</tr>
+			<tr class="green-cell">
+				<td></td>
+				<td class="green-cell"></td>		
+				<td class="yellow-cell"></td>		
+				<td class="green-cell"></td>
+				<td class="none wite">CCPD<td>
+				<td colspan="2"></td>
+			</tr>
+			<tr>
+				<th class="none" rowspan=6>Wednesday</th>
+				<td>linux</td>
+				<td>Web technology</td>
+				<td>Naveen(Quant)</td>
+				<td>DDA</td>
+				<td>Advance java</td>
+				<td colspan="2">Web technology lab G1</td>
+				<td>Advance Java G1</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2">220</td>
+				<td>318</td>
+			</tr>
+			<tr class="green-cell">
+				<td>Mr Naveen</td>
+				<td>Ms Gurmandeep</td>
+				<td class="yellow-cell">CCPD</td>
+				<td>Ms Samriti</td>
+				<td>Dr. Anand sukla</td>
+				<td colspan="2">Ms Gurmandeep</td>
+				<td>Ms pragti</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2">Linux <label for=""></label></td>
+				<td>Library</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2">318</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="green-cell" colspan="2">Mr Naveen</td>
+				<td class="green-cell"></td>
+			</tr>
+			<tr>
+				<th class="none" rowspan=6>Thruday</th>
+				<td>Web Technology</td>
+				<td>linux</td>
+				<td>DDA</td>
+				<td>Advance Java</td>
+				<td>Information Security</td>
+				<td colspan="2">Web Technology Lab</td>
+				<td>Advance Java Lab G1</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2">220</td>
+				<td>318</td>
+			</tr>
+			<tr class="green-cell">
+				<td>Ms Gurmandeep kaur</td>
+				<td>Mr. Naveen</td>
+				<td>Ms Samriti</td>
+				<td>Dr. Aanand sukla</td>
+				<td>Ms Gaganpreet</td>
+				<td colspan="2">Ms Gurmandeep G1</td>
+				<td>Ms Pragati</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2">Linux Lab G2</td>
+				<td>Library</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2">318</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2" class="green-cell">Mr Naveen</td>
+				<td class="green-cell"></td>
+			</tr>
+			<tr>
+				<th class="none" rowspan=6>Friday</th>
+				<td>linux</td>
+				<td>Web Technology</td>
+				<td>DDA</td>
+				<td>Advance Java</td>
+				<td>Abhishek Python</td>
+				<td>Information Security</td>
+				<td colspan="2">Linux Lab G1</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2">318</td>
+			</tr>
+			<tr class="green-cell">
+				<td>Mr Naveen</td>
+				<td>Ms Gurmandeep kaur</td>
+				<td>Ms Samriti</td>
+				<td>Dr. Anand sukla</td>
+				<td class="yellow-cell">CCPD</td>
+				<td>Ms Gaganpreet</td>
+				<td colspan="2">Mr Naveen</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2"></td>
+				<td></td>
+				<td colspan="2">Advance Java G2</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2"></td>
+				<td></td>
+				<td colspan="2">220</td>
+			</tr>
+			<tr class="green-cell">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2"></td>
+				<td class="none"></td>
+				<td colspan="2">Ms Pragati</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
