@@ -19,34 +19,38 @@
 <body>
     <div class="container">
         <div class="regit pt-3 pb-3 pe-3 ps-3">
-            <form class="form" action="balmiki.php" method="post">
-                <div class="text-center h3">Regitation</div>
-            <div>
-                <lable>Name :</lable>
-                <input type="text" class="form-control" name="name" placeholder="Enter your name">
-            </div>
-            <div class="pt-3">
-                <lable>Contact :</lable>
-                <input type="number" class="form-control" name="contact" placeholder="Enter your Mobile number">
-            </div>
-            <div class="pt-3">
-                <lable>Email :</lable>
-                <input type="email" class="form-control" name="email" placeholder="Enter your Email ID">
-            </div>
-            <div class="pt-3">
-                <lable>Gender :</lable>
-                <input type="radio" name="gender" value="male">Male
-                <input type="radio" name="gender" value="Female">Female
-            </div>
-            <div class="pt-3">
-                <label>Date of birth</label>
-                <input type="date" class="form-control" name="dob">
-            </div>
+            <form class="form" action="../10th/">
+                <div class="text-center h3">Login</div>        
+            <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="user" placeholder="Username" name="usrname">
+              </div>
+              <div class="input-group mb-3">
+                  <span class="input-group-text"><i class="fa fa-eye-slash"></i></span>
+                <input type="text" class="form-control" id="pass" placeholder="Your password" name="email">
+              </div>
+
             <div class="text-center pt-3">
-                <input type="submit" class="btn btn-dark">
+                <input id="form" type="submit" onclick="db()" class="btn btn-dark">
             </div>
             </form>
         </div>
     </div>
 </body>
+
+<script>
+    function db(){
+        user = parseInt( document.getElementById("user").value);
+        pass = parseInt( document.getElementById("pass").value);
+        if (user == "Balmikiii"){
+            if (pass == "2235548") {
+                alert("Success");
+            } else{
+                alert("Try again");
+            }
+        } else {
+            alert("wrong user and password");
+        }}
+        </script>
+
 </html>

@@ -41,6 +41,14 @@
                 <label>Date of birth :</label>
                 <?php echo $_POST["dob"]; ?>
             </div>
+            <div class="pt-3">
+                <label>Your State :</label>
+                <?php echo $_POST["state"]; ?>
+            </div>
+            <div class="pt-3">
+                <label>city :</label>
+                <?php echo $_POST["city"]; ?>
+            </div>
             </div>
         </div>
     </div>

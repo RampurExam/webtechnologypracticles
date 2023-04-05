@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Input operation</title>
+    <link href="../3rd/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../3rd/js/bootstrap.bundle.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+    .regit{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        margin-top: 100px;
+        box-shadow: 2px 2px 19px black;
+    }
+</style>
+</head>
+<body>
+    <div class="regit pt-3 pb-3 pe-3 ps-3">
+        <div class="text-center h4">Check even or odd</div>
+            <input type="number" id="num" class="form-control mb-3" placeholder="Enter any number">
+            <p id="resPara" style="display:none">It's <span id="res"></span> Number</p>
+        <div class="text-center pt-3">
+            <button onclick="fun()" class="btn btn-dark">submit</button>
+        </div>
+    </div>
+<script>
+    var num, temp;
+    function fun(){
+        num = parseInt(document.getElementById("num").value);
+        if(num){
+            temp = document.getElementById("resPara");
+            temp.style.display = "block";
+        if(num%2==0)
+            document.getElementById("res").innerHTML = "Even";
+        else
+            document.getElementById("res").innerHTML = "Odd";
+        }
+    }
+</script>
+</body>
+</html>
