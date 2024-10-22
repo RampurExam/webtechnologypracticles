@@ -1,236 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>my first page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namotek Website</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <style>
-    body{
-	      background-color:#f7f7f7;
-    }
-    table{
-        margin-left:auto;
-        margin-right:auto;
-        border:1px solid black;
-        width:60%;
-        border:1px solid black;
-    }
-    th{
-        background-color:#363636;
-        color:#fff;
-        padding:5px;
-    }
-    tr{
-      background-color: #e5e5e5;
-    }
-    tr:hover{
-      background-color:#8d8d8d;
-      color:#000;   
-    }
-    .bk{
-      width:8%;
-    }
-    .bk8{
-      width:11%;
-    }
-    td{
-      padding-left:5px;
-      padding-top: 8px;
-      padding-bottom: 8px;
-    }
-    a{
-      text-decoration:none;
-      color: black;
-      }
-  </style>
-<body>
-<div>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./final_logo.png" alt="Namotek Logo" class="logo-img" />
+          <h1>Namotek</h1>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Production</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <table title="Index">
-    <caption><h1>index</h1></caption>
-    <tr title="Syllabus Of Web Technology">
-      <th class="bk">Sr No.</th>
-      <th>List of Experiments</th>
-      <th class="bk8">Page. No.</th>
-      <th>Remark</th>
-      <th class="bk">Chek</th>
-    </tr>
-    <tr>
-      <td>01.</td>
-      <td>Design index page of a book Titled Web Designing.</td>
-      <td>1-5</td>
-      <td></td>
-      <td>Clic here</td>
-    </tr>
-    <tr>
-      <td>02</td>
-      <td>Create a simple HTML page to demonstrate the use of different tags.</td>
-      <td>6</td>      
-      <td></td>      
-      <td><a href="2nd/tags.html" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>03</td>
-      <td>Display Letter Head of your college on a web page & it must be scrolling Right to  Left.</td>
-      <td>7</td>
-      <td></td>  
-      <td><a href="3rd/letter.html" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>04</td>
-      <td>Create a link to move within a single page rather than to load another page.</td>
-      <td>8</td>
-      <td></td>  
-      <td><a href="loadother.html" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>05</td>
-      <td>Display “Name of University” using different Text formatting Tags.</td>
-      <td>9</td>
-      <td></td>  
-      <td><a href="Text_formatting.html" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>06</td>
-      <td>Design Time Table of your department and highlight most important periods.</td>
-      <td>11</td>
-      <td></td>  
-      <td><a href="6th/timetable.html" target="_blank" >Clic here</a></td>
-    </tr>
-    <tr>
-      <td>07</td>
-      <td>Use Tables to provide layout to your web page.</td>
-      <td>12</td>
-      <td></td>  
-      <td><a href="7th.html" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>08</td>
-      <td>Embed Audio and Video into your web page.</td>
-      <td>13-15</td>
-      <td></td>  
-      <td><a href="audio/audio.html" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>09</td>
-      <td>Divide a web page vertically and display logo of your college in left pane and logo of  university in right pane.</td>
-      <td>16-18</td>
-      <td></td>  
-      <td><a href="9th/index.html" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>Create Bio- Data of an employee.</td>
-      <td>16-18</td>
-      <td></td>  
-      <td><a href="10th/index.html" target="_blank" >Clic here</a></td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>Design front page of a hospital with different styles.</td>
-      <td>19-21</td>
-      <td></td>  
-      <td><a href="hospital" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>Design a web page and display horizontally two different web pages at a time.</td>
-      <td>22-25</td>
-      <td></td>  
-      <td><a href="12th" target="_blank" >Clic here</a></td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td> Write a program to create a login form. On clicking the submit button, the user should  get navigated to a profile page.</td>
-      <td>26-27</td>
-      <td></td>  
-      <td><a href="13" target="_blank" >Clic here</a></td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>Write a HTML code to create a Registration Form. On submitting the form, the user  should be asked to login with the new credentials.</td>
-      <td>28</td>
-      <td></td>  
-      <td><a href="14" target="_blank" >Clic here</a></td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>Write a HTML code to create website in your college or department and create link  for Tutorial of specific subject.</td>
-      <td>29-33</td>
-      <td></td>  
-      <td><a href="15" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td> Write a program to perform following operations on two numbers input by the user:  Addition 2) Subtraction 3) Multiplication 4) Division.</td>
-      <td>34-38</td>
-      <td></td>  
-      <td><a href="16" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>Design a program to solve quadratic equations</td>
-      <td>39-40</td>
-      <td></td>  
-      <td><a href="17" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>Write a program to determine greatest number of three numbers.</td>
-      <td>41-42</td>
-      <td></td>  
-      <td><a href="18" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>Write a script to compute, the Average and Grade of students marks.</td>
-      <td>43-44</td>
-      <td></td>  
-      <td><a href="19" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>Design a scientific calculator and make event for each button using scripting  language.</td>
-      <td>45-48</td>
-      <td></td>  
-      <td><a href="20" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>Write a script to check whether a number is even or odd?</td>
-      <td>49-50</td>
-      <td></td>  
-      <td><a href="21" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>Write a program to show whether a number is prime or not?</td>
-      <td>51-52</td>
-      <td></td>  
-      <td><a href="22" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>Write a program to show multiplication table of any number.</td>
-      <td>53-54</td>
-      <td></td>  
-      <td><a href="23" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>Write a program to find the factorial of any number.</td>
-      <td>55-56</td>
-      <td></td>  
-      <td><a href="24" target="_blank">Clic here</a></td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>Write a program to show Fibonacci Series between 0 to 74.</td>
-      <td>57-60</td>
-      <td></td>  
-      <td><a href="25" target="_blank">Clic here</a></td>
-    </tr>
-  </table>
-  <h1></h1>
-</div>
-</body>
+    <!-- Banner Section -->
+    <section class="banner">
+      <div class="banner-content">
+        <h2>Welcome to Namotek</h2>
+        <p>Innovating the future, one step at a time.</p>
+        <a href="#" class="banner-btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Production Section with Cards -->
+    <section class="production">
+      <h2>Productions</h2>
+      <p>
+        Check out our latest products and innovations that define excellence and
+        precision.
+      </p>
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="logo1.png" alt="Logo 1" class="card-logo" />
+          <h3>Product 1</h3>
+          <p>This is a description for Product 1.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="logo2.png" alt="Logo 2" class="card-logo" />
+          <h3>Product 2</h3>
+          <p>This is a description for Product 2.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="logo3.png" alt="Logo 3" class="card-logo" />
+          <h3>Product 3</h3>
+          <p>This is a description for Product 3.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <img src="logo4.png" alt="Logo 4" class="card-logo" />
+          <h3>Product 4</h3>
+          <p>This is a description for Product 4.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <img src="logo5.png" alt="Logo 5" class="card-logo" />
+          <h3>Product 5</h3>
+          <p>This is a description for Product 5.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <img src="logo6.png" alt="Logo 6" class="card-logo" />
+          <h3>Product 6</h3>
+          <p>This is a description for Product 6.</p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

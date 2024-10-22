@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 80px;
+}
+
+/* Banner Section */
+.banner {
+  background-image: url('./banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  position: relative;
+}
+
+.banner-content h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.banner-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Production Section */
+.production {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.production h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.production p {
+  font-size: 40px;
+  /* Font size updated to 40px */
+  font-weight: 500;
+  /* Font weight updated to 500 */
+  margin-bottom: 40px;
+  line-height: 1.2;
+  /* Slightly tighter line spacing */
+}
+
+/* Card Grid */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Max 3 cards per row */
+  gap: 20px;
+  justify-content: center;
+  /* Center the grid */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+}
+
+.card-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Responsive: Adjust grid for smaller screens */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row for medium screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 card per row for small screens */
+  }
+}
